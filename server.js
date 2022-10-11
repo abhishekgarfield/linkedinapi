@@ -4,6 +4,7 @@ var app = express();
 var bcrypt = require("bcrypt");
 const { v4 } = require("uuid");
 app.use(express.json());
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
 app.use(cors());
 var MongoClient = require("mongodb").MongoClient;
