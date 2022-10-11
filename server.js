@@ -10,7 +10,7 @@ app.use(cors());
 var MongoClient = require("mongodb").MongoClient;
 var uri =
   "mongodb+srv://abhishek:1234@cluster0.hqkaekj.mongodb.net/?retryWrites=true&w=majority";
-const port = process.env.Port || 8080;
+  const port = process.env.PORT || 3000;
 
 app.post("/signup", async (req, res) => {
   console.log("signup");
